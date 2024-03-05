@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+   height: 100vw; 
+}
+
+.mãe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 50px;  
+}
+
+.esquerda{
+    width: 40%;
+    
+}
+
+p{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+button{
+    color: white;
+    background-color: #c51111;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px; 
+}
+button:hover {
+    background-color: white;
+    color: #c51111;
+    font-size: 15px;
+    transition: 0.4s ease-in-out;
+    
+}
+video{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.video{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.mascara{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+.logo{
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.mario-luigi{
+    height: 500px;
+}
+.linkwpp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+
+}
+
+.header img{
+    height: 60px;
+}
+
+.header a {
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #c51111;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.formulário-fale-conosco{
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -380px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: left 0.5s ease-in-out;
+}
+
+input{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 5px;
+
+}
+
+textarea{
+    height: 100px;
+    width: 270px;
+}
+.mascara-form {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,0.9528186274509804) 46%, rgba(0,0,0,1) 100%);
+    transition: visibility 1s ease-in-out;
+}
+
+@media(max-width: 1300px){
+    p{
+        display: none;
+    }
+
+        .mãe {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+        }
+    .esquerda{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mario-luigi{
+        width: 90vw;
+        height: auto;  
+    }
+    .header{
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+
+    .header img{
+        display: none;
+    }
+
+    .mascara-form{
+        height: 100%;
+    }
+}
+
+
