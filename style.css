@@ -146,7 +146,7 @@ textarea{
     transition: visibility 1s ease-in-out;
 }
 
-@media(max-width: 1300px){
+@media(max-width: 900px){
     p{
         display: none;
     }
